@@ -10,9 +10,16 @@
 		9042486426FCC144008ABC4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042486326FCC144008ABC4D /* AppDelegate.swift */; };
 		9042486626FCC144008ABC4D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 9042486526FCC144008ABC4D /* art.scnassets */; };
 		9042486826FCC144008ABC4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042486726FCC144008ABC4D /* ViewController.swift */; };
-		9042486B26FCC144008ABC4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9042486926FCC144008ABC4D /* Main.storyboard */; };
 		9042486D26FCC145008ABC4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9042486C26FCC145008ABC4D /* Assets.xcassets */; };
 		9042487026FCC145008ABC4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9042486E26FCC145008ABC4D /* LaunchScreen.storyboard */; };
+		9042487926FCC22D008ABC4D /* ViewController+ARSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042487826FCC22D008ABC4D /* ViewController+ARSessionDelegate.swift */; };
+		9042487E26FCC2CE008ABC4D /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042487D26FCC2CE008ABC4D /* StatusViewController.swift */; };
+		90AF4A53270801B800038165 /* AeroplaneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AF4A52270801B800038165 /* AeroplaneNode.swift */; };
+		90AF4A552708106F00038165 /* HUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AF4A542708106F00038165 /* HUDViewController.swift */; };
+		90AF4A59270D59D600038165 /* SCNVector3Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AF4A58270D59D500038165 /* SCNVector3Extensions.swift */; };
+		90B4F60626FD36AC007A8208 /* Aeroplane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B4F60526FD36AC007A8208 /* Aeroplane.swift */; };
+		90B4F60826FD38F2007A8208 /* FlightRadar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B4F60726FD38F2007A8208 /* FlightRadar.swift */; };
+		90B4F60F26FF666B007A8208 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90B4F60E26FF666B007A8208 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,9 +27,16 @@
 		9042486326FCC144008ABC4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9042486526FCC144008ABC4D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		9042486726FCC144008ABC4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9042486A26FCC144008ABC4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9042486C26FCC145008ABC4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9042486F26FCC145008ABC4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9042487826FCC22D008ABC4D /* ViewController+ARSessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSessionDelegate.swift"; sourceTree = "<group>"; };
+		9042487D26FCC2CE008ABC4D /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		90AF4A52270801B800038165 /* AeroplaneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AeroplaneNode.swift; sourceTree = "<group>"; };
+		90AF4A542708106F00038165 /* HUDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDViewController.swift; sourceTree = "<group>"; };
+		90AF4A58270D59D500038165 /* SCNVector3Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVector3Extensions.swift; sourceTree = "<group>"; };
+		90B4F60526FD36AC007A8208 /* Aeroplane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aeroplane.swift; sourceTree = "<group>"; };
+		90B4F60726FD38F2007A8208 /* FlightRadar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRadar.swift; sourceTree = "<group>"; };
+		90B4F60E26FF666B007A8208 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,14 +69,53 @@
 		9042486226FCC144008ABC4D /* AR Flight Radar */ = {
 			isa = PBXGroup;
 			children = (
+				90AF4A512708019D00038165 /* Views */,
+				90B4F60426FD3581007A8208 /* Model */,
+				90B4F60326FD3574007A8208 /* Network */,
+				90AF4A52270801B800038165 /* AeroplaneNode.swift */,
 				9042486326FCC144008ABC4D /* AppDelegate.swift */,
-				9042486526FCC144008ABC4D /* art.scnassets */,
 				9042486726FCC144008ABC4D /* ViewController.swift */,
-				9042486926FCC144008ABC4D /* Main.storyboard */,
-				9042486C26FCC145008ABC4D /* Assets.xcassets */,
-				9042486E26FCC145008ABC4D /* LaunchScreen.storyboard */,
+				9042487826FCC22D008ABC4D /* ViewController+ARSessionDelegate.swift */,
+				9042487D26FCC2CE008ABC4D /* StatusViewController.swift */,
+				90AF4A542708106F00038165 /* HUDViewController.swift */,
+				90AF4A58270D59D500038165 /* SCNVector3Extensions.swift */,
+				9042486526FCC144008ABC4D /* art.scnassets */,
+				90AF4A502707F19600038165 /* Resources */,
 			);
 			path = "AR Flight Radar";
+			sourceTree = "<group>";
+		};
+		90AF4A502707F19600038165 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9042486C26FCC145008ABC4D /* Assets.xcassets */,
+				9042486E26FCC145008ABC4D /* LaunchScreen.storyboard */,
+				90B4F60E26FF666B007A8208 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		90AF4A512708019D00038165 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		90B4F60326FD3574007A8208 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				90B4F60726FD38F2007A8208 /* FlightRadar.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		90B4F60426FD3581007A8208 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90B4F60526FD36AC007A8208 /* Aeroplane.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9042486626FCC144008ABC4D /* art.scnassets in Resources */,
+				90B4F60F26FF666B007A8208 /* Main.storyboard in Resources */,
 				9042487026FCC145008ABC4D /* LaunchScreen.storyboard in Resources */,
 				9042486D26FCC145008ABC4D /* Assets.xcassets in Resources */,
-				9042486B26FCC144008ABC4D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90AF4A59270D59D600038165 /* SCNVector3Extensions.swift in Sources */,
+				9042487E26FCC2CE008ABC4D /* StatusViewController.swift in Sources */,
+				9042487926FCC22D008ABC4D /* ViewController+ARSessionDelegate.swift in Sources */,
+				90AF4A552708106F00038165 /* HUDViewController.swift in Sources */,
+				90AF4A53270801B800038165 /* AeroplaneNode.swift in Sources */,
+				90B4F60826FD38F2007A8208 /* FlightRadar.swift in Sources */,
+				90B4F60626FD36AC007A8208 /* Aeroplane.swift in Sources */,
 				9042486826FCC144008ABC4D /* ViewController.swift in Sources */,
 				9042486426FCC144008ABC4D /* AppDelegate.swift in Sources */,
 			);
@@ -145,14 +205,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9042486926FCC144008ABC4D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9042486A26FCC144008ABC4D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9042486E26FCC145008ABC4D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,6 +340,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7VLX4VPK4N;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -295,6 +348,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,6 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.whatsbeef.AR-Flight-Radar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -325,6 +380,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
